@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #8831cb;
+  background-image: url(http://www.technocrazed.com/wp-content/uploads/2015/12/HD-purple-wallpaper-image-to-use-as-background-1.jpg);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.login-box,
+.signup-box {
+  flex: 1 1 300px; /* Flex-grow, flex-shrink, flex-basis */
+  padding: 40px;
+  background: rgba(40, 39, 39, 0.8);
+  border-radius: 0px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  
+}
+
+.login-box h2,
+.signup-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  font-size: 2em;
+  color: #fff;
+}
+
+.signup-box {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  align-items: center;
+  padding: 60px;
+  height: 512.8px;
+}
+
+.signup-box h2 {
+  text-align: left;
+  margin-left: 1px;
+  margin-top: -18px;
+}
+
+.signup-box img {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  display: block;
+  margin: 20px auto;
+}
+
+.signup-box .image-text {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+
+.user-box {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.user-box input:focus ~ label,
+.user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #cd28fa;
+  font-size: 12px;
+}
+
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #faf9fb;
+  color: #09070a;
+  box-shadow: 0 0 5px #f3f3f4, 0 0 25px #f4f4f5, 0 0 50px #f5f4f6, 0 0 100px #f8f8f9;
+}
+
+.forgot-password a {
+  color: white;
+  text-decoration: none;
+  font-size: smaller;
+}
+
+.role {
+  display: flex;
+  background-color: rgba(48, 48, 48, 0.8);
+  color: white;
+  width: 100%;
+  height: 40px;
+  position: relative;
+  margin-bottom: 30px;
+}
